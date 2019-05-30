@@ -24,8 +24,9 @@ class MyListFetcher {
     weak var delegate: ListFetcherDelegate?
     
     let fetcher: APIListFetcherProtocol
-    var currentPage = 0
+    var currentPage = 1
     var pages: [Page] = []
+    var total_pages: Int = 0
     
     init(fetcher: APIListFetcherProtocol) {
         
@@ -37,15 +38,37 @@ class MyListFetcher {
         self.fetcher.fetchList(in: currentPage, succeed: { [unowned self] (page) in
             
             self.addNewPage(page)
+            self.total_pages = page.total_pages
         }) { (error) in
             
             print("Debug : APIError : ", error.localizedDescription)
         }
     }
     
+    func next() {
+        
+        self.fetcher.fetchList(in: currentPage, succeed: { [unowned self] (page) in
+            
+            self.addNewPage(page)
+            self.nextIfNeeded()
+        }) { (error) in
+            
+            print("Debug : APIError : ", error.localizedDescription)
+        }
+    }
+    
+    private func nextIfNeeded() {
+        
+        if currentPage <= total_pages {
+            
+            self.next()
+        }
+    }
+    
     private func addNewPage(_ page: Page) {
         
-        self.pages.append(page)
-        self.delegate?.didDownloadNewPage(for: self.pages.count - 1)
+        currentPage = currentPage + 1
+        pages.append(page)
+        delegate?.didDownloadNewPage(for: self.pages.count - 1)
     }
 }

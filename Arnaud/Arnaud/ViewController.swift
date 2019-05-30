@@ -26,7 +26,8 @@ class ViewController: UIViewController, ListFetcherDelegate {
     
     func didDownloadNewPage(for section: Int) {
         
-        print("Page have been added in section ", section)
+        let presentPagesViewController = PresentPagesViewController(fetcher: fetcher!)
+        self.navigationController?.pushViewController(presentPagesViewController, animated: true)
     }
 }
 

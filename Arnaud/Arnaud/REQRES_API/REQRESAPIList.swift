@@ -18,10 +18,15 @@ class REQRESAPIList: APIListFetcherProtocol {
     }
     
     func fetchList(in page: Int? = nil, succeed: ((_ page: Page) -> Void)?, failed: ((_ error: Error) -> Void)?) {
-        Alamofire.request(url).responseJSON { response in
+        
+        var completeUrl = url
+        if let page = page {
+            completeUrl = String(format: "%@?page=%d", url, page)
+        }
+        
+        Alamofire.request(completeUrl).responseJSON { response in
             
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                print("Data: \(utf8Text)") // original server data as UTF8 string
+            if let data = response.data {
                 
                 let decoder = JSONDecoder()
                 
