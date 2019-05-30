@@ -12,14 +12,14 @@ class ViewController: UIViewController, ListFetcherDelegate {
     
     var fetcher: MyListFetcher?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         let url = "https://reqres.in/api/list"
         let api = REQRESAPIList(url: url)
         
         self.fetcher = MyListFetcher(fetcher: api)
+        
         fetcher!.delegate = self
         fetcher!.start()
     }
@@ -27,7 +27,7 @@ class ViewController: UIViewController, ListFetcherDelegate {
     func didDownloadNewPage(for section: Int) {
         
         let presentPagesViewController = PresentPagesViewController(fetcher: fetcher!)
-        self.navigationController?.pushViewController(presentPagesViewController, animated: true)
+        self.navigationController?.pushViewController(presentPagesViewController, animated: false)
     }
 }
 

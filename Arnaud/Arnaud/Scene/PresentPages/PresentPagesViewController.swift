@@ -29,13 +29,20 @@ class PresentPagesViewController: UICollectionViewController, ListFetcherDelegat
         super.init(collectionViewLayout: layout)
         
         self.fetcher.delegate = self
-        self.collectionView.backgroundColor = .yellow
+        self.collectionView.backgroundColor = .white
         self.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CellId")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fetcher.next()
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reloadData))
+    }
+    
+    @objc private func reloadData() {
+        
+        self.navigationController?.popViewController(animated: false)
     }
     
     required init?(coder aDecoder: NSCoder) {

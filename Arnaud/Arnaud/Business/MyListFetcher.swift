@@ -24,13 +24,17 @@ class MyListFetcher {
     weak var delegate: ListFetcherDelegate?
     
     let fetcher: APIListFetcherProtocol
-    var currentPage = 1
-    var pages: [Page] = []
-    var total_pages: Int = 0
+    var currentPage: Int
+    var pages: [Page]
+    var total_pages: Int
     
     init(fetcher: APIListFetcherProtocol) {
         
         self.fetcher = fetcher
+        
+        currentPage = 1
+        pages = []
+        total_pages = 0
     }
     
     func start() {

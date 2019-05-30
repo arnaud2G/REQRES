@@ -32,7 +32,12 @@ class REQRESAPIList: APIListFetcherProtocol {
                 
                 do {
                     let page = try decoder.decode(Page.self, from: data)
-                    succeed?(page)
+                    
+                    let deadlineTime = DispatchTime.now() + .seconds(1)
+                    DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+                        succeed?(page)
+                    }
+                    
                 } catch {
                     failed?(APIError.decodableError)
                 }
