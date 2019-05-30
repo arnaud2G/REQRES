@@ -8,11 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, ListFetcherDelegate {
+    
+    var fetcher: MyListFetcher?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = "https://reqres.in/api/list"
+        let api = REQRESAPIList(url: url)
+        
+        self.fetcher = MyListFetcher(fetcher: api)
+        fetcher!.delegate = self
+        fetcher!.start()
+    }
+    
+    func didDownloadNewPage(for section: Int) {
+        
+        print("Page have been added in section ", section)
     }
 }
 

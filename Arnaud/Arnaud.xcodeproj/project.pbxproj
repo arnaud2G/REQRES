@@ -13,6 +13,13 @@
 		34AA49D5229FC83700A213E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34AA49D4229FC83700A213E9 /* Assets.xcassets */; };
 		34AA49D8229FC83700A213E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AA49D6229FC83700A213E9 /* LaunchScreen.storyboard */; };
 		34AA49E3229FC83700A213E9 /* ArnaudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA49E2229FC83700A213E9 /* ArnaudTests.swift */; };
+		34AA49EF229FCC7200A213E9 /* REQRESAPIList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA49EE229FCC7200A213E9 /* REQRESAPIList.swift */; };
+		34E9FB00229FD02800630520 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FAFF229FD02800630520 /* Page.swift */; };
+		34E9FB02229FD03500630520 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FB01229FD03500630520 /* Color.swift */; };
+		34E9FB05229FD44500630520 /* MyListFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FB04229FD44500630520 /* MyListFetcher.swift */; };
+		34E9FB07229FD7BA00630520 /* REQRESAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9FB06229FD7BA00630520 /* REQRESAPIError.swift */; };
+		CEB7CAAB43000EC712CF6372 /* Pods_Arnaud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53275A49172B84408F146D7C /* Pods_Arnaud.framework */; };
+		D4BEF2723CA95B0450A88116 /* Pods_ArnaudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C4C630B8225BD482BC86A3 /* Pods_ArnaudTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B8DA5FF2689739C84B16B8F /* Pods-Arnaud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arnaud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Arnaud/Pods-Arnaud.debug.xcconfig"; sourceTree = "<group>"; };
 		34AA49CA229FC83500A213E9 /* Arnaud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arnaud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AA49CD229FC83500A213E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34AA49CF229FC83500A213E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +44,16 @@
 		34AA49DE229FC83700A213E9 /* ArnaudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArnaudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AA49E2229FC83700A213E9 /* ArnaudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArnaudTests.swift; sourceTree = "<group>"; };
 		34AA49E4229FC83700A213E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34AA49EE229FCC7200A213E9 /* REQRESAPIList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REQRESAPIList.swift; sourceTree = "<group>"; };
+		34E9FAFF229FD02800630520 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		34E9FB01229FD03500630520 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		34E9FB04229FD44500630520 /* MyListFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListFetcher.swift; sourceTree = "<group>"; };
+		34E9FB06229FD7BA00630520 /* REQRESAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REQRESAPIError.swift; sourceTree = "<group>"; };
+		38C4C630B8225BD482BC86A3 /* Pods_ArnaudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArnaudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53275A49172B84408F146D7C /* Pods_Arnaud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arnaud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		600C59616AFDB0E75A6E3EA1 /* Pods-ArnaudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArnaudTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArnaudTests/Pods-ArnaudTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4A286A602593057607F23F3 /* Pods-ArnaudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArnaudTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArnaudTests/Pods-ArnaudTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCB0080672724A6BD05A2148 /* Pods-Arnaud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arnaud.release.xcconfig"; path = "Pods/Target Support Files/Pods-Arnaud/Pods-Arnaud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB7CAAB43000EC712CF6372 /* Pods_Arnaud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +69,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BEF2723CA95B0450A88116 /* Pods_ArnaudTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04D0D6E9A4DFD62ECB4B743C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53275A49172B84408F146D7C /* Pods_Arnaud.framework */,
+				38C4C630B8225BD482BC86A3 /* Pods_ArnaudTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		34AA49C1229FC83500A213E9 = {
 			isa = PBXGroup;
 			children = (
 				34AA49CC229FC83500A213E9 /* Arnaud */,
 				34AA49E1229FC83700A213E9 /* ArnaudTests */,
 				34AA49CB229FC83500A213E9 /* Products */,
+				39284CD8EF5D5DD36C07F23D /* Pods */,
+				04D0D6E9A4DFD62ECB4B743C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +108,9 @@
 		34AA49CC229FC83500A213E9 /* Arnaud */ = {
 			isa = PBXGroup;
 			children = (
+				34E9FB03229FD43500630520 /* Business */,
+				34E9FAFE229FD01400630520 /* Model */,
+				34AA49ED229FCC4C00A213E9 /* REQRES_API */,
 				34AA49CD229FC83500A213E9 /* AppDelegate.swift */,
 				34AA49CF229FC83500A213E9 /* ViewController.swift */,
 				34AA49D1229FC83500A213E9 /* Main.storyboard */,
@@ -96,6 +130,43 @@
 			path = ArnaudTests;
 			sourceTree = "<group>";
 		};
+		34AA49ED229FCC4C00A213E9 /* REQRES_API */ = {
+			isa = PBXGroup;
+			children = (
+				34AA49EE229FCC7200A213E9 /* REQRESAPIList.swift */,
+				34E9FB06229FD7BA00630520 /* REQRESAPIError.swift */,
+			);
+			path = REQRES_API;
+			sourceTree = "<group>";
+		};
+		34E9FAFE229FD01400630520 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34E9FAFF229FD02800630520 /* Page.swift */,
+				34E9FB01229FD03500630520 /* Color.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34E9FB03229FD43500630520 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				34E9FB04229FD44500630520 /* MyListFetcher.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		39284CD8EF5D5DD36C07F23D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B8DA5FF2689739C84B16B8F /* Pods-Arnaud.debug.xcconfig */,
+				CCB0080672724A6BD05A2148 /* Pods-Arnaud.release.xcconfig */,
+				A4A286A602593057607F23F3 /* Pods-ArnaudTests.debug.xcconfig */,
+				600C59616AFDB0E75A6E3EA1 /* Pods-ArnaudTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34AA49E7229FC83700A213E9 /* Build configuration list for PBXNativeTarget "Arnaud" */;
 			buildPhases = (
+				A2C49D4D28FBCA8742AD4A98 /* [CP] Check Pods Manifest.lock */,
 				34AA49C6229FC83500A213E9 /* Sources */,
 				34AA49C7229FC83500A213E9 /* Frameworks */,
 				34AA49C8229FC83500A213E9 /* Resources */,
+				804C04D9810958FA27608FBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34AA49EA229FC83700A213E9 /* Build configuration list for PBXNativeTarget "ArnaudTests" */;
 			buildPhases = (
+				E3B86E8979E983CABB24FC9B /* [CP] Check Pods Manifest.lock */,
 				34AA49DA229FC83700A213E9 /* Sources */,
 				34AA49DB229FC83700A213E9 /* Frameworks */,
 				34AA49DC229FC83700A213E9 /* Resources */,
@@ -192,12 +266,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		804C04D9810958FA27608FBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Arnaud/Pods-Arnaud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Arnaud/Pods-Arnaud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C49D4D28FBCA8742AD4A98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arnaud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B86E8979E983CABB24FC9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArnaudTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		34AA49C6229FC83500A213E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				34AA49D0229FC83500A213E9 /* ViewController.swift in Sources */,
+				34E9FB07229FD7BA00630520 /* REQRESAPIError.swift in Sources */,
+				34AA49EF229FCC7200A213E9 /* REQRESAPIList.swift in Sources */,
+				34E9FB00229FD02800630520 /* Page.swift in Sources */,
+				34E9FB05229FD44500630520 /* MyListFetcher.swift in Sources */,
+				34E9FB02229FD03500630520 /* Color.swift in Sources */,
 				34AA49CE229FC83500A213E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +506,7 @@
 		};
 		34AA49E8229FC83700A213E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8DA5FF2689739C84B16B8F /* Pods-Arnaud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +524,7 @@
 		};
 		34AA49E9229FC83700A213E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB0080672724A6BD05A2148 /* Pods-Arnaud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +542,7 @@
 		};
 		34AA49EB229FC83700A213E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4A286A602593057607F23F3 /* Pods-ArnaudTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +563,7 @@
 		};
 		34AA49EC229FC83700A213E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600C59616AFDB0E75A6E3EA1 /* Pods-ArnaudTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
